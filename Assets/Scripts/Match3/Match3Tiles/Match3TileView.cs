@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +10,23 @@ namespace Sandsoft.Match3
         public Match3TileModel Model { get; private set; }
 
         [SerializeField] 
-        private Image _image;
+        private ShowAnimationEffect _showAnimationEffect;
         
+        [SerializeField] 
+        private Image _image;
+
+        private void Start()
+        {
+            ApplyAppariationgEffect();
+        }
+        private void ApplyAppariationgEffect()
+        {
+            if (_showAnimationEffect != null)
+            {
+                _showAnimationEffect.PlayEffect(_image.GetComponent<RectTransform>());
+            }
+        }
+
         public void SetPosition(Vector2Int position)
         {
             Position = position;

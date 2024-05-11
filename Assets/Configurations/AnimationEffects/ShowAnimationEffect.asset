@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77540414e5965540aba259d16317058, type: 3}
+  m_Name: ShowAnimationEffect
+  m_EditorClassIdentifier: 
+  _durationScaleUp: 0.2
+  _durationScaleDown: 0.1
+  _scaleFinal: 1.5
+  _easeScaleUp: 6
+  _easeScaleDown: 6

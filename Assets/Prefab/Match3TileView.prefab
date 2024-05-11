@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5bd87313273ff4fa16f1b025a4e235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _showAnimationEffect: {fileID: 11400000, guid: a9f20a108fca0fa48ba379008de40a02, type: 2}
   _image: {fileID: 1479202275501180578}
 --- !u!1 &7103334235733144580
 GameObject:
