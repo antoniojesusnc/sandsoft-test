@@ -15,15 +15,16 @@ namespace Sandsoft.Match3
         [SerializeField] 
         private Image _image;
 
-        private void Start()
+        private void Awake()
         {
-            ApplyAppariationgEffect();
+            _image.gameObject.SetActive(false);
+            
         }
-        private void ApplyAppariationgEffect()
+        public void DoShowEffect()
         {
             if (_showAnimationEffect != null)
             {
-                _showAnimationEffect.PlayEffect(_image.GetComponent<RectTransform>());
+                _showAnimationEffect.PlayEffect(_image);
             }
         }
 

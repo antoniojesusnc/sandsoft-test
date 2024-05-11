@@ -441,6 +441,7 @@ MonoBehaviour:
   _match3TilesConfig: {fileID: 11400000, guid: 73a5269de110ce548abba8f860a1e1da, type: 2}
   _gridLayout: {fileID: 690326959}
   _tileContainer: {fileID: 690326958}
+  _levelGenerationEffect: {fileID: 11400000, guid: 4b458240b721b4546be0c91fd0344fbb, type: 2}
 --- !u!1 &690326957
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,11 +9,17 @@ namespace Sandsoft.Match3
     {
         [Header("Config")] [SerializeField] private Match3TilesConfig _match3TilesConfig;
 
-        [Header("Level Objects")] [SerializeField]
+        [Header("Level Objects")] 
+        [SerializeField]
         private GridLayoutGroup _gridLayout;
 
-        [SerializeField] private Transform _tileContainer;
+        [SerializeField] 
+        private Transform _tileContainer;
 
+        [Header("Show Effect")] 
+        [SerializeField] 
+        private LevelGenerationEffect _levelGenerationEffect;
+        
         private Dictionary<Vector2Int, Match3TileView> _tiles = new();
         private LevelGeneratorController _levelGeneratorController;
         private LevelModel _levelModel;
@@ -67,10 +73,10 @@ namespace Sandsoft.Match3
         {
             _levelModel = _levelGeneratorController.GenerateLevel(_match3TilesConfig);
 
-            CreateLevel();
+            StartCoroutine(CreateLevel());
         }
 
-        private void CreateLevel()
+        private IEnumerator CreateLevel()
         {
             _gridLayout.enabled = true;
             foreach (var tileModel in _levelModel.Tiles)
@@ -79,6 +85,12 @@ namespace Sandsoft.Match3
                 tile.SetPosition(tileModel.Position);
                 tile.SetModel(tileModel);
                 _tiles.Add(tileModel.Position, tile);
+            }
+
+            foreach (var tileView in _tiles)
+            {
+                tileView.Value.DoShowEffect();
+                yield return new WaitForSeconds(_levelGenerationEffect.TileDelay);
             }
         }
 

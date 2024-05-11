@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e77540414e5965540aba259d16317058, type: 3}
-  m_Name: ShowAnimationEffect
+  m_Script: {fileID: 11500000, guid: d7caef67da3b92a4ab5766791c0734da, type: 3}
+  m_Name: LevelGenerationEffect
   m_EditorClassIdentifier: 
-  _durationScaleUp: 0.2
-  _easeScaleUp: 6
-  _scaleFinalMod: 1.3
-  _easeScaleDown: 6
-  _fadeInDuration: 0.3
-  _easeFadeIn: 6
+  <TileDelay>k__BackingField: 0.01
