@@ -2,8 +2,7 @@
     "name": "SandsoftMatch3",
     "rootNamespace": "",
     "references": [
-        "GUID:78fe6f4fac5ea6f46a41e8c7adc2837f",
-        "GUID:48c9f6afdac61634db0e0f241c7d4d51"
+        "GUID:c8d8c08a06261af47b0a48ea482ebfc6"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
