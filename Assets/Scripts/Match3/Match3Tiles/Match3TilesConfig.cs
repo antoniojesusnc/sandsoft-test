@@ -8,6 +8,9 @@ namespace Sandsoft.Match3
     public class Match3TilesConfig : ScriptableObject
     {
         [field: SerializeField]
+        public int MinMoveToCountAsSolvable { get; private set; }
+        
+        [field: SerializeField]
         public Vector2 TileSize { get; private set; }
         
         [field: SerializeField]

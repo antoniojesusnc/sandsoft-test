@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d51578adad04aa47a0730f784c15ac8, type: 3}
   m_Name: Match3TilesConfig
   m_EditorClassIdentifier: 
+  <MinMoveToCountAsSolvable>k__BackingField: 3
   <TileSize>k__BackingField: {x: 8, y: 8}
   <Match3TileViewPrefab>k__BackingField: {fileID: -571028281057214411, guid: 79e7b185e311d0a4c8d835e903d78a24, type: 3}
   <Match3Tiles>k__BackingField:
