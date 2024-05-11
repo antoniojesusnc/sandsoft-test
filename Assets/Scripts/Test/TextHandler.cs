@@ -13,6 +13,8 @@ public class TextHandler : MonoBehaviour
     
     private Test01 _test01 = new Test01();
     
+    private Test02 _test02 = new Test02();
+    private Test02Alternative _test02Alternative = new Test02Alternative();
     
     // Update is called once per frame
     void Update()
@@ -20,6 +22,14 @@ public class TextHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             CheckTest01(_inputsTest01);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            CheckTest02(_inputsTest02);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            CheckTest02Alternative(_inputsTest02);
         }
     }
     
@@ -42,6 +52,43 @@ public class TextHandler : MonoBehaviour
         }
     }
     
+    private void CheckTest02(List<TestSolutions<string, string>> input)
+    {
+        var error = false;
+        for (int i = 0; i < input.Count; i++)
+        {
+            var solution = _test02.Solution(input[i].Input);
+            if (solution != input[i].Solution)
+            {
+                Debug.Log($"Error in Test 02, it is \"{solution}\" but should be \"{input[i].Solution}\"");
+                error = true;
+            }
+        }
+
+        if (!error)
+        {
+            Debug.Log("[GOOD] Test Success");
+        }
+    }
+    
+    private void CheckTest02Alternative(List<TestSolutions<string, string>> input)
+    {
+        var error = false;
+        for (int i = 0; i < input.Count; i++)
+        {
+            var solution = _test02Alternative.Solution(input[i].Input);
+            if (solution != input[i].Solution)
+            {
+                Debug.Log($"Error in Test 02, it is \"{solution}\" but should be \"{input[i].Solution}\"");
+                error = true;
+            }
+        }
+
+        if (!error)
+        {
+            Debug.Log("[GOOD] Test Success");
+        }
+    }
     
     [Serializable]
     public class TestSolutions<T1, T2>
