@@ -36,18 +36,6 @@ namespace Sandsoft.Match3
             _gridLayout.cellSize = new Vector2(finalSize, finalSize);
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                if (_tiles.Count > 0)
-                {
-                    DestroyCurrentLevel();
-                }
-                GenerateLevel();
-            }
-        }
-
         private void DestroyCurrentLevel()
         {
             foreach (var tile in _tiles)
@@ -57,8 +45,18 @@ namespace Sandsoft.Match3
             _tiles.Clear();
         }
 
-        
+
         public void GenerateLevel()
+        {
+            if (_tiles.Count > 0)
+            {
+                DestroyCurrentLevel();
+            }
+            
+            GenerateLevelInternal();
+        }
+
+        private void GenerateLevelInternal()
         {
             _gridLayout.enabled = true;
             for (int i = 0; i < _match3TilesConfig.TileSize.x; i++)
