@@ -1,8 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEngine;
 
 // you can also use other imports, for example:
 // using System.Collections.Generic;

@@ -2,9 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEngine;
 
 // you can also use other imports, for example:
 // using System.Collections.Generic;
