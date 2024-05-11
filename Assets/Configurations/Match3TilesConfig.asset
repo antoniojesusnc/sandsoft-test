@@ -15,17 +15,15 @@ MonoBehaviour:
   <TileSize>k__BackingField: {x: 8, y: 8}
   <Match3TileViewPrefab>k__BackingField: {fileID: -571028281057214411, guid: 79e7b185e311d0a4c8d835e903d78a24, type: 3}
   <Match3Tiles>k__BackingField:
-  - <TilesColor>k__BackingField: 0
+  - <TileColor>k__BackingField: 0
     <Image>k__BackingField: {fileID: 21300000, guid: 3251e1ccbab329049a6397aafb65b5fa, type: 3}
-  - <TilesColor>k__BackingField: 1
+  - <TileColor>k__BackingField: 1
     <Image>k__BackingField: {fileID: 21300000, guid: 62d6a5c6bd559774c9200c82a38e09cb, type: 3}
-  - <TilesColor>k__BackingField: 2
+  - <TileColor>k__BackingField: 2
     <Image>k__BackingField: {fileID: 21300000, guid: 70898825457de1d4190e6e5a7aa4d3ac, type: 3}
-  - <TilesColor>k__BackingField: 3
+  - <TileColor>k__BackingField: 3
     <Image>k__BackingField: {fileID: 21300000, guid: fe412b4544ce6fe49b0d8178899d3a97, type: 3}
-  - <TilesColor>k__BackingField: 4
+  - <TileColor>k__BackingField: 4
     <Image>k__BackingField: {fileID: 21300000, guid: 7fda916f14f602749af17eb1ac9190a7, type: 3}
-  - <TilesColor>k__BackingField: 5
+  - <TileColor>k__BackingField: 5
     <Image>k__BackingField: {fileID: 21300000, guid: 145066d0ca0065744a47e6347359f059, type: 3}
-  - <TilesColor>k__BackingField: 0
-    <Image>k__BackingField: {fileID: 0}

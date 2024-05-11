@@ -18,6 +18,7 @@ namespace Sandsoft.Match3
 
         public void SetModel(Match3TileModel model)
         {
+            name = model.TileColor.ToString();
             Model = model;
             SetImage();
         }

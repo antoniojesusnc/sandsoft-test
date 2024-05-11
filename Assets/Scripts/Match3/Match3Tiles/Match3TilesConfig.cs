@@ -21,7 +21,7 @@ namespace Sandsoft.Match3
     public class Match3TileConfig
     {
         [field: SerializeField]
-        public Match3TilesColors TilesColor { get; private set; }
+        public Match3TilesColors TileColor { get; private set; }
         [field: SerializeField]
         public Sprite Image { get; private set; }
     }
